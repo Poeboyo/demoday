@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Add from "./pages/Add";
 import Battle from "./pages/Battle";
+import "materialize-css/dist/css/materialize.min.css";
 
 class App extends Component {
   render() {

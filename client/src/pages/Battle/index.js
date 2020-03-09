@@ -4,7 +4,7 @@ import { Row, Col } from "react-materialize";
 import { Link } from "react-router-dom";
 import PlayerOne from "../../components/PlayerOne";
 import PlayerTwo from "../../components/PlayerTwo";
-
+// import BattleLogo from "../../components/BattleLogo";
 function Battle() {
   return (
     <div id="characterSelectStage">
@@ -17,6 +17,7 @@ function Battle() {
         <i className="material-icons right">arrow_back</i>
       </Link>
 
+      {/* <BattleLogo></BattleLogo> */}
       {/*  Character Selection */}
       <Row id="characterSelectScreen">
         <Col s={5}>

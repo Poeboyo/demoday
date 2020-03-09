@@ -7,12 +7,12 @@ function Home() {
   return (
     <div>
       <Logo></Logo>
-      <Link
+      {/* <Link
         to="/add"
         className="waves-effect waves-light btn-large create-new light-blue darken-4"
       >
         <i className="material-icons right">add face</i>Add A Character{" "}
-      </Link>
+      </Link> */}
       <Link
         to="/battle"
         className="waves-effect waves-light btn-large battle-button-home red"
