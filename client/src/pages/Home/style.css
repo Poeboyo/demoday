@@ -1,0 +1,13 @@
+body {
+  background-color: #000000;
+}
+.battle-button-home {
+  margin-left: 26%;
+  margin-top: 9%;
+  z-index: 10;
+}
+.create-new {
+  margin-left: 20%;
+  margin-top: 9%;
+  z-index: 10;
+}

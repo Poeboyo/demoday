@@ -1,0 +1,51 @@
+.charForm {
+  text-align: center;
+  margin-top: 10%;
+}
+.submit {
+  text-align: center;
+  margin-left: -5%;
+  margin-top: 29%;
+
+  position: absolute;
+}
+.center-align {
+  margin-left: 20%;
+  margin-top: 19%;
+  position: absolute;
+}
+
+.selections {
+  margin-left: 23%;
+  margin-top: 22%;
+  position: absolute;
+  width: 80%;
+  overflow: initial;
+}
+#characterName {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 12%;
+  width: 75%;
+}
+
+#characterImage {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 16%;
+  width: 75%;
+}
+
+#create-your-character {
+  z-index: -2;
+  margin-top: -10%;
+  margin-left: 32%;
+  position: absolute;
+}
+#brain {
+  z-index: -3;
+  margin-left: 35%;
+  position: absolute;
+  margin-top: -10%;
+  width: 27%;
+}
