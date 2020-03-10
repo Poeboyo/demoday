@@ -33,6 +33,7 @@
   background-color: black;
   z-index: 101;
   margin-top: -48%;
+  background-image: ("setting.gif");
 }
 .flip {
   transform: scaleX(-1);
@@ -42,40 +43,74 @@
 #playerTwo {
   width: 310px;
   height: 442px;
+  margin-top: 8%;
 }
 #caseTwo {
   position: absolute;
-  margin-left: 60%;
-  margin-top: 1%;
+  margin-left: 64%;
+  margin-top: 10%;
 }
 #caseOne {
   position: absolute;
-  margin-top: 1%;
+  margin-top: 10%;
   margin-left: 10%;
 }
 
 #attackTwo {
   position: absolute;
+  margin-top: 150%;
+  margin-left: -86%;
 }
 #defendTwo {
   position: absolute;
+  margin-top: 150%;
+  margin-left: -57.25%;
 }
 #strAttackTwo {
   position: absolute;
+  margin-top: 165%;
+  margin-left: -65%;
 }
 #counterTwo {
   position: absolute;
+  margin-top: 150%;
+  margin-left: -28%;
 }
 
 #attackOne {
   position: absolute;
+  margin-top: 150%;
+  margin-left: -86%;
 }
 #defendOne {
   position: absolute;
+  margin-top: 150%;
+  margin-left: -57.25%;
 }
 #strAttackOne {
   position: absolute;
+  margin-top: 165%;
+  margin-left: -65%;
 }
 #counterOne {
   position: absolute;
+  margin-top: 150%;
+  margin-left: -28%;
+}
+#healthOne {
+  background-color: greenyellow;
+  position: absolute;
+  width: 70%;
+  margin-left: 12%;
+}
+#healthTwo {
+  background-color: greenyellow;
+  position: absolute;
+  width: 70%;
+  margin-left: 12%;
+}
+#battleLog {
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 0%;
 }
