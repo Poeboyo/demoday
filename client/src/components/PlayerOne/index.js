@@ -157,6 +157,11 @@ class PlayerOneSelect extends React.Component {
 
     return (
       <div id="carouselOne">
+        <div id="statsOne">
+          <h3>Strength: {playerOne.stats.attack}</h3>
+          <h3>Defense: {playerOne.stats.defense}</h3>
+          <h3>Speed: {playerOne.stats.speed}</h3>
+        </div>
         <div className="carousel">
           <a className="carousel-item" href="#one!" samesite="none">
             <img
