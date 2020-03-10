@@ -2,6 +2,7 @@ import React from "react";
 import "materialize-css";
 import $ from "jquery";
 import M from "materialize-css";
+import "./style.css";
 
 document.addEventListener("DOMContentLoaded", function() {
   var elems = document.querySelectorAll(".carousel");
@@ -91,8 +92,8 @@ let goku = {
   stats: {
     health: 100,
     attack: 20,
-    defense: 0,
-    evasion: 20,
+    defense: 10,
+    evasion: 0,
     speed: 10
   }
 };
@@ -117,51 +118,156 @@ class PlayerOneSelect extends React.Component {
     $("#odimmOne").on("click", function() {
       playerOne = odimm;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#endeavorOne").on("click", function() {
       playerOne = endeavor;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#dekuOne").on("click", function() {
       playerOne = deku;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#trissOne").on("click", function() {
       playerOne = triss;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#allForOneOne").on("click", function() {
       playerOne = allForOne;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#allmightOne").on("click", function() {
       playerOne = allMight;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#linkOne").on("click", function() {
       playerOne = link;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#gokuOne").on("click", function() {
       playerOne = goku;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#waluigiOne").on("click", function() {
       playerOne = waluigi;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
     $("#inteleonOne").on("click", function() {
       playerOne = inteleon;
       console.log("Player One:", playerOne);
+      $("#firstChoice").text("Choose: " + playerOne.name);
+      $("#statsOne").text(
+        "ATK: " +
+          playerOne.stats.attack +
+          " " +
+          "DEF: " +
+          playerOne.stats.defense +
+          " " +
+          "SPD: " +
+          playerOne.stats.speed
+      );
     });
 
     return (
       <div id="carouselOne">
-        <div id="statsOne">
-          <h3>Strength: {playerOne.stats.attack}</h3>
-          <h3>Defense: {playerOne.stats.defense}</h3>
-          <h3>Speed: {playerOne.stats.speed}</h3>
-        </div>
         <div className="carousel">
           <a className="carousel-item" href="#one!" samesite="none">
             <img
@@ -235,6 +341,10 @@ class PlayerOneSelect extends React.Component {
             />
           </a>
         </div>
+        <a class="waves-effect waves-light btn red" id="firstChoice">
+          Choose:
+        </a>
+        <div id="statsOne" class="white-text"></div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from "react";
 import "materialize-css";
 import $ from "jquery";
 import M from "materialize-css";
+import "./style.css";
 
 document.addEventListener("DOMContentLoaded", function() {
   var elems = document.querySelectorAll(".carousel");
@@ -117,42 +118,152 @@ class PlayerTwoSelect extends React.Component {
     $("#odimmTwo").on("click", function() {
       playerTwo = odimm;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#endeavorTwo").on("click", function() {
       playerTwo = endeavor;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#dekuTwo").on("click", function() {
       playerTwo = deku;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#trissTwo").on("click", function() {
       playerTwo = triss;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#allForOneTwo").on("click", function() {
       playerTwo = allForOne;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#allmightTwo").on("click", function() {
       playerTwo = allMight;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#linkTwo").on("click", function() {
       playerTwo = link;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#gokuTwo").on("click", function() {
       playerTwo = goku;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#waluigiTwo").on("click", function() {
       playerTwo = waluigi;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
     $("#inteleonTwo").on("click", function() {
       playerTwo = inteleon;
       console.log("Player Two:", playerTwo);
+      $("#secondChoice").text("Choose: " + playerTwo.name);
+      $("#statsTwo").text(
+        "ATK: " +
+          playerTwo.stats.attack +
+          " " +
+          "DEF: " +
+          playerTwo.stats.defense +
+          " " +
+          "SPD: " +
+          playerTwo.stats.speed
+      );
     });
 
     return (
@@ -230,6 +341,10 @@ class PlayerTwoSelect extends React.Component {
             />
           </a>
         </div>
+        <a className="waves-effect waves-light btn blue" id="secondChoice">
+          Choose:
+        </a>
+        <div id="statsTwo" class="white-text"></div>
       </div>
     );
   }
