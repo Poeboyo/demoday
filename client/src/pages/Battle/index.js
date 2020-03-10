@@ -2,8 +2,8 @@ import React from "react";
 import "./style.css";
 import { Row, Col } from "react-materialize";
 import { Link } from "react-router-dom";
-import PlayerOne from "../../components/PlayerOne";
-import PlayerTwo from "../../components/PlayerTwo";
+import PlayerOneSelect from "../../components/PlayerOne";
+import PlayerTwoSelect from "../../components/PlayerTwo";
 // import BattleLogo from "../../components/BattleLogo";
 function Battle() {
   return (
@@ -22,13 +22,13 @@ function Battle() {
       <Row id="characterSelectScreen">
         <Col s={5}>
           <div id="characterSelectionOne">
-            <PlayerOne />
+            <PlayerOneSelect />
           </div>
         </Col>
         <Col s={2}></Col>
         <Col s={5}>
           <div id="characterSelectionTwo">
-            <PlayerTwo />
+            <PlayerTwoSelect />
           </div>
         </Col>
       </Row>
