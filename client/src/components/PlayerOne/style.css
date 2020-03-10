@@ -9,3 +9,15 @@
   margin-top: 3%;
   font-size: x-large;
 }
+
+#secondChoice {
+  z-index: 90;
+  margin-left: 22%;
+  width: 60%;
+}
+#statsTwo {
+  z-index: 91;
+  margin-left: 28%;
+  margin-top: 3%;
+  font-size: x-large;
+}

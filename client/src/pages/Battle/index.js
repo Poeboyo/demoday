@@ -3,8 +3,8 @@ import "./style.css";
 import { Row, Col } from "react-materialize";
 import { Link } from "react-router-dom";
 import PlayerOneSelect from "../../components/PlayerOne";
-import PlayerTwoSelect from "../../components/PlayerTwo";
 import BattleLogo from "../../components/BattleLogo";
+
 function Battle() {
   return (
     <div id="characterSelectStage">
@@ -21,18 +21,18 @@ function Battle() {
       <BattleLogo></BattleLogo>
       {/*  Character Selection */}
       <Row id="characterSelectScreen">
-        <Col s={5}>
+        <Col s={12}>
           <div id="characterSelectionOne">
             <PlayerOneSelect />
           </div>
         </Col>
-        <Col s={2}></Col>
-        <Col s={5}>
-          <div id="characterSelectionTwo">
-            <PlayerTwoSelect />
-          </div>
-        </Col>
       </Row>
+      <a
+        className="waves-effect  btn deep-purple darken-3 disabled"
+        id="battleButton"
+      >
+        BATTLE
+      </a>
     </div>
   );
 }
