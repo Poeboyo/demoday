@@ -160,46 +160,47 @@ class PlayerOneSelect extends React.Component {
         <div className="carousel">
           <a className="carousel-item" href="#one!" samesite="none">
             <img
+              src="https://vignette.wikia.nocookie.net/p__/images/2/22/Dragon-Ball-Goku-PNG-Free-Download.png/revision/latest/scale-to-width-down/347?cb=20181207162901&path-prefix=protagonist"
+              alt="Goku"
+              id="gokuOne"
+            />
+          </a>
+          <a className="carousel-item" href="#two!" samesite="none">
+            <img
               src="https://vignette.wikia.nocookie.net/witcher/images/f/f3/Tw3_journal_mirrorman.png/revision/latest/scale-to-width-down/350?cb=20170501180556"
               alt="Gaunter O Dimm"
               id="odimmOne"
             />
           </a>
-          <a className="carousel-item" href="#two!" samesite="none">
+          <a className="carousel-item" href="#three!" samesite="none">
             <img
               src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/22/Endeavor_Anime_Profile.png/revision/latest/scale-to-width-down/239?cb=20170906213725"
               alt="Endeavor"
               id="endeavorOne"
             />
           </a>
-          <a className="carousel-item" href="#three!" samesite="none">
+          <a className="carousel-item" href="#four!" samesite="none">
             <img
               src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/5/55/All_Might_Hero_Form_Full_Body.png/revision/latest/scale-to-width-down/311?cb=20190129015644"
               alt="Allmight"
               id="allmightOne"
             />
           </a>
-          <a className="carousel-item" href="#four!" samesite="none">
+          <a className="carousel-item" href="#five!" samesite="none">
             <img
               src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/f/f7/Izuku_Midoriya_Hero_Costume_Action_Pose.png/revision/latest/scale-to-width-down/350?cb=20190909030259"
               alt="Deku"
               id="dekuOne"
             />
           </a>
-          <a className="carousel-item" href="#five!" samesite="none">
+          <a className="carousel-item" href="#six!" samesite="none">
             <img
               src="https://vignette.wikia.nocookie.net/zelda/images/5/57/Breath_of_the_Wild_Artwork_Link_%28Official_Artwork%29.png/revision/latest/scale-to-width-down/350?cb=20160623185226"
               alt="Link"
               id="linkOne"
             />
           </a>
-          <a className="carousel-item" href="#six!" samesite="none">
-            <img
-              src="https://vignette.wikia.nocookie.net/p__/images/2/22/Dragon-Ball-Goku-PNG-Free-Download.png/revision/latest/scale-to-width-down/347?cb=20181207162901&path-prefix=protagonist"
-              alt="Goku"
-              id="gokuOne"
-            />
-          </a>
+
           <a className="carousel-item" href="#seven!" samesite="none">
             <img
               src="https://vignette.wikia.nocookie.net/mario/images/6/62/840px-SuperMarioParty_Waluigi.png/revision/latest/scale-to-width-down/310?cb=20190519205517"

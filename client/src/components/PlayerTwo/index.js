@@ -160,18 +160,19 @@ class PlayerTwoSelect extends React.Component {
         <div className="carousel">
           <a className="carousel-item" href="#one!" samesite="none">
             <img
-              src="https://vignette.wikia.nocookie.net/witcher/images/f/f3/Tw3_journal_mirrorman.png/revision/latest/scale-to-width-down/350?cb=20170501180556"
-              alt="Gaunter O Dimm"
-              id="odimmTwo"
-            />
-          </a>
-          <a className="carousel-item" href="#two!" samesite="none">
-            <img
               src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/22/Endeavor_Anime_Profile.png/revision/latest/scale-to-width-down/239?cb=20170906213725"
               alt="Endeavor"
               id="endeavorTwo"
             />
           </a>
+          <a className="carousel-item" href="#two!" samesite="none">
+            <img
+              src="https://vignette.wikia.nocookie.net/witcher/images/f/f3/Tw3_journal_mirrorman.png/revision/latest/scale-to-width-down/350?cb=20170501180556"
+              alt="Gaunter O Dimm"
+              id="odimmTwo"
+            />
+          </a>
+
           <a className="carousel-item" href="#three!" samesite="none">
             <img
               src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/5/55/All_Might_Hero_Form_Full_Body.png/revision/latest/scale-to-width-down/311?cb=20190129015644"

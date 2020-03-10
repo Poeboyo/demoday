@@ -10,6 +10,7 @@ function BattleLogo() {
         alt="battle logo"
       ></img>
       <img src="./images/pulse.gif" id="pulseBattle" alt="energy pulse"></img>
+      <img src="./images/separator.gif" id="separator" alt="line"></img>
     </div>
   );
 }
