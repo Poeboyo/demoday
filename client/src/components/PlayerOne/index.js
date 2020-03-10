@@ -138,7 +138,6 @@ class PlayerOneSelect extends React.Component {
   render() {
     $("#odimmOne").on("click", function() {
       playerOne = odimm;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -153,7 +152,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#endeavorOne").on("click", function() {
       playerOne = endeavor;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -168,7 +166,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#dekuOne").on("click", function() {
       playerOne = deku;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -183,7 +180,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#trissOne").on("click", function() {
       playerOne = triss;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -198,7 +194,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#allForOneOne").on("click", function() {
       playerOne = allForOne;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -213,7 +208,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#allmightOne").on("click", function() {
       playerOne = allMight;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -228,7 +222,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#linkOne").on("click", function() {
       playerOne = link;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -243,7 +236,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#gokuOne").on("click", function() {
       playerOne = goku;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -258,7 +250,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#waluigiOne").on("click", function() {
       playerOne = waluigi;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -273,7 +264,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#inteleonOne").on("click", function() {
       playerOne = inteleon;
-      console.log("Player One:", playerOne);
       $("#firstChoice").text("Choose: " + playerOne.name);
       $("#statsOne").text(
         "ATK: " +
@@ -288,7 +278,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#odimmTwo").on("click", function() {
       playerTwo = odimm;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -303,7 +292,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#endeavorTwo").on("click", function() {
       playerTwo = endeavor;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -318,7 +306,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#dekuTwo").on("click", function() {
       playerTwo = deku;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -333,7 +320,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#trissTwo").on("click", function() {
       playerTwo = triss;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -348,7 +334,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#allForOneTwo").on("click", function() {
       playerTwo = allForOne;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -363,7 +348,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#allmightTwo").on("click", function() {
       playerTwo = allMight;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -378,7 +362,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#linkTwo").on("click", function() {
       playerTwo = link;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -393,7 +376,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#gokuTwo").on("click", function() {
       playerTwo = goku;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -408,7 +390,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#waluigiTwo").on("click", function() {
       playerTwo = waluigi;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -423,7 +404,6 @@ class PlayerOneSelect extends React.Component {
     });
     $("#inteleonTwo").on("click", function() {
       playerTwo = inteleon;
-      console.log("Player Two:", playerTwo);
       $("#secondChoice").text("Choose: " + playerTwo.name);
       $("#statsTwo").text(
         "ATK: " +
@@ -629,7 +609,49 @@ class PlayerOneSelect extends React.Component {
         >
           BATTLE
         </a>
-        <div id="battleArea"></div>
+        <div id="battleArea">
+          <div id="case1">
+            <div id="healthOne">100/100</div>
+            <img
+              id="playerOne"
+              src="https://vignette.wikia.nocookie.net/mario/images/6/62/840px-SuperMarioParty_Waluigi.png/revision/latest/scale-to-width-down/310?cb=20190519205517"
+              alt="player one"
+              className="flip"
+            />
+            <button id="attackOne" className="red btn">
+              Attack
+            </button>
+            <button id="strAttackOne" className="red btn">
+              Strong Attack
+            </button>
+            <button id="defendOne" className="red btn">
+              Defend
+            </button>
+            <button id="counterOne" className="red btn">
+              Evade
+            </button>
+          </div>
+          <div id="case2">
+            <div id="healthTwo">100/100</div>
+            <img
+              id="playerTwo"
+              src="https://vignette.wikia.nocookie.net/mario/images/6/62/840px-SuperMarioParty_Waluigi.png/revision/latest/scale-to-width-down/310?cb=20190519205517"
+              alt="player two"
+            />
+            <button id="attackTwo" className="blue btn">
+              Attack
+            </button>
+            <button id="strAttackTwo" className="blue btn">
+              Strong Attack
+            </button>
+            <button id="defendTwo" className="blue btn">
+              Defend
+            </button>
+            <button id="counterTwo" className="blue btn">
+              Evade
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
