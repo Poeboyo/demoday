@@ -27,12 +27,6 @@ function Battle() {
           </div>
         </Col>
       </Row>
-      <a
-        className="waves-effect  btn deep-purple darken-3 disabled"
-        id="battleButton"
-      >
-        BATTLE
-      </a>
     </div>
   );
 }

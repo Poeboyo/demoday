@@ -586,6 +586,12 @@ class PlayerOneSelect extends React.Component {
             </div>
           </div>
         </div>
+        <a
+          className="waves-effect  btn deep-purple darken-3 disabled"
+          id="battleButton"
+        >
+          BATTLE
+        </a>
       </div>
     );
   }
