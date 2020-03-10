@@ -14,6 +14,8 @@ let playerTwo;
 
 let odimm = {
   name: "Gaunter O'Dimm",
+  img:
+    "https://vignette.wikia.nocookie.net/witcher/images/f/f3/Tw3_journal_mirrorman.png/revision/latest/scale-to-width-down/350?cb=20170501180556",
   stats: {
     health: 100,
     attack: 15,
@@ -25,11 +27,15 @@ let odimm = {
 
 let endeavor = {
   name: "Endeavor",
+  img:
+    "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/22/Endeavor_Anime_Profile.png/revision/latest/scale-to-width-down/239?cb=20170906213725",
   stats: { health: 100, attack: 15, defense: 5, evasion: 10, speed: 5 }
 };
 
 let allMight = {
   name: "All Might",
+  img:
+    "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/5/55/All_Might_Hero_Form_Full_Body.png/revision/latest/scale-to-width-down/311?cb=20190129015644",
   stats: {
     health: 100,
     attack: 20,
@@ -41,6 +47,8 @@ let allMight = {
 
 let allForOne = {
   name: "All For One",
+  img:
+    "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/3/32/All_For_One_Profile.png/revision/latest/scale-to-width-down/243?cb=20180528014920",
   stats: {
     health: 100,
     attack: 20,
@@ -52,6 +60,8 @@ let allForOne = {
 
 let triss = {
   name: "Triss Merigold",
+  img:
+    "https://vignette.wikia.nocookie.net/witcher/images/2/27/Triss-TW3-new-render.png/revision/latest/scale-to-width-down/313?cb=20160402173701",
   stats: {
     health: 100,
     attack: 10,
@@ -63,11 +73,15 @@ let triss = {
 
 let deku = {
   name: "Izuku Midoriya",
+  img:
+    "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/f/f7/Izuku_Midoriya_Hero_Costume_Action_Pose.png/revision/latest/scale-to-width-down/350?cb=20190909030259",
   stats: { health: 100, attack: 10, defense: 10, evasion: 10, speed: 15 }
 };
 
 let link = {
   name: "Link",
+  img:
+    "https://vignette.wikia.nocookie.net/zelda/images/5/57/Breath_of_the_Wild_Artwork_Link_%28Official_Artwork%29.png/revision/latest/scale-to-width-down/350?cb=20160623185226",
   stats: {
     health: 100,
     attack: 15,
@@ -79,6 +93,8 @@ let link = {
 
 let inteleon = {
   name: "Inteleon",
+  img:
+    "https://cdn.bulbagarden.net/upload/thumb/e/e4/818Inteleon.png/250px-818Inteleon.png",
   stats: {
     health: 100,
     attack: 10,
@@ -90,6 +106,8 @@ let inteleon = {
 
 let goku = {
   name: "Son Goku",
+  img:
+    "https://vignette.wikia.nocookie.net/p__/images/2/22/Dragon-Ball-Goku-PNG-Free-Download.png/revision/latest/scale-to-width-down/347?cb=20181207162901&path-prefix=protagonist",
   stats: {
     health: 100,
     attack: 20,
@@ -101,6 +119,8 @@ let goku = {
 
 let waluigi = {
   name: "Waluigi",
+  img:
+    "https://vignette.wikia.nocookie.net/mario/images/6/62/840px-SuperMarioParty_Waluigi.png/revision/latest/scale-to-width-down/310?cb=20190519205517",
   stats: {
     health: 100,
     attack: 20,
@@ -421,9 +441,12 @@ class PlayerOneSelect extends React.Component {
       $("#battleButton").removeClass("disabled");
     }
 
+    $("#battleButton").on("click", function() {
+      $("#encompassingcrap").hide();
+    });
     return (
       <div>
-        <div className="row">
+        <div className="row" id="encompassingcrap">
           <div class="col s6">
             <div id="carouselOne">
               <div className="carousel">
