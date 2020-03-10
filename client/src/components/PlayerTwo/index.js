@@ -24,14 +24,14 @@ let odimm = {
 
 let endeavor = {
   name: "Endeavor",
-  stats: { health: 100, attack: 20, defense: 5, evasion: 10, speed: 5 }
+  stats: { health: 100, attack: 15, defense: 5, evasion: 10, speed: 5 }
 };
 
 let allMight = {
   name: "All Might",
   stats: {
     health: 100,
-    attack: 10,
+    attack: 20,
     defense: 10,
     evasion: 10,
     speed: 10
@@ -62,7 +62,7 @@ let triss = {
 
 let deku = {
   name: "Izuku Midoriya",
-  stats: { health: 100, attack: 10, defense: 10, evasion: 10, speed: 10 }
+  stats: { health: 100, attack: 10, defense: 10, evasion: 10, speed: 15 }
 };
 
 let link = {
@@ -102,7 +102,7 @@ let waluigi = {
   name: "Waluigi",
   stats: {
     health: 100,
-    attack: 15,
+    attack: 20,
     defense: 5,
     evasion: 20,
     speed: 10
