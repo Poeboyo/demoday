@@ -420,6 +420,8 @@ class PlayerOneSelect extends React.Component {
     if (playerOne && playerTwo !== undefined) {
       $("#battleButton").removeClass("disabled");
     }
+    playerOne = odimm;
+    playerTwo = link;
 
     $("#battleButton").on("click", function() {
       $("#encompassingcrap").hide();
@@ -611,7 +613,9 @@ class PlayerOneSelect extends React.Component {
         </a>
         <div id="battleArea">
           <div id="caseOne">
-            <div id="healthOne">100/100</div>
+            <progress id="healthOne" value="100" max="100">
+              100/100
+            </progress>
             <img
               id="playerOne"
               src="https://vignette.wikia.nocookie.net/mario/images/6/62/840px-SuperMarioParty_Waluigi.png/revision/latest/scale-to-width-down/310?cb=20190519205517"
@@ -631,8 +635,13 @@ class PlayerOneSelect extends React.Component {
               Evade
             </button>
           </div>
+          <div id="battleLog">
+            <h3 className="white-text">BATTLE LOG</h3>
+          </div>
           <div id="caseTwo">
-            <div id="healthTwo">100/100</div>
+            <progress id="healthTwo" value="100" max="100">
+              100/100
+            </progress>
             <img
               id="playerTwo"
               src="https://vignette.wikia.nocookie.net/mario/images/6/62/840px-SuperMarioParty_Waluigi.png/revision/latest/scale-to-width-down/310?cb=20190519205517"
