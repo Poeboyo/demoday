@@ -417,6 +417,10 @@ class PlayerOneSelect extends React.Component {
       );
     });
 
+    if (playerOne && playerTwo !== undefined) {
+      $("#battleButton").removeClass("disabled");
+    }
+
     return (
       <div>
         <div className="row">
