@@ -3,6 +3,105 @@ import "materialize-css";
 import $ from "jquery";
 import { M } from "materialize-css/dist/js/materialize.min.js";
 
+let playerOne;
+
+let odimm = {
+  name: "Gaunter O'Dimm",
+  stats: {
+    health: 100,
+    attack: 15,
+    defense: 5,
+    evasion: 15,
+    speed: 5
+  }
+};
+
+let endeavor = {
+  name: "Endeavor",
+  stats: { health: 100, attack: 20, defense: 5, evasion: 10, speed: 5 }
+};
+
+let allMight = {
+  name: "All Might",
+  stats: {
+    health: 100,
+    attack: 10,
+    defense: 10,
+    evasion: 10,
+    speed: 10
+  }
+};
+
+let allForOne = {
+  name: "All For One",
+  stats: {
+    health: 100,
+    attack: 20,
+    defense: 5,
+    evasion: 5,
+    speed: 10
+  }
+};
+
+let triss = {
+  name: "Triss Merigold",
+  stats: {
+    health: 100,
+    attack: 10,
+    defense: 10,
+    evasion: 10,
+    speed: 10
+  }
+};
+
+let deku = {
+  name: "Izuku Midoriya",
+  stats: { health: 100, attack: 10, defense: 10, evasion: 10, speed: 10 }
+};
+
+let link = {
+  name: "Link",
+  stats: {
+    health: 100,
+    attack: 15,
+    defense: 5,
+    evasion: 10,
+    speed: 10
+  }
+};
+
+let inteleon = {
+  name: "Inteleon",
+  stats: {
+    health: 100,
+    attack: 10,
+    defense: 5,
+    evasion: 20,
+    speed: 5
+  }
+};
+
+let goku = {
+  name: "Son Goku",
+  stats: {
+    health: 100,
+    attack: 20,
+    defense: 0,
+    evasion: 20,
+    speed: 10
+  }
+};
+
+let waluigi = {
+  name: "Son Goku",
+  stats: {
+    health: 100,
+    attack: 15,
+    defense: 5,
+    evasion: 20,
+    speed: 10
+  }
+};
 class PlayerOne extends React.Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
@@ -10,15 +109,19 @@ class PlayerOne extends React.Component {
       console.log(M);
     });
   }
-
   render() {
+    $("#odimmOne").on("click", function() {
+      playerOne = odimm;
+      console.log(playerOne);
+    });
     return (
       <div id="carouselOne">
         <div className="carousel">
-          <a className="carousel-item" href="#one!" id="odimmOne">
+          <a className="carousel-item" href="#one!">
             <img
               src="https://vignette.wikia.nocookie.net/witcher/images/f/f3/Tw3_journal_mirrorman.png/revision/latest/scale-to-width-down/350?cb=20170501180556"
               alt="Gaunter O Dimm"
+              id="odimmOne"
             />
           </a>
           <a className="carousel-item" href="#two!" id="endeavorOne">
