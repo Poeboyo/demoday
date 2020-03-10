@@ -610,7 +610,7 @@ class PlayerOneSelect extends React.Component {
           BATTLE
         </a>
         <div id="battleArea">
-          <div id="case1">
+          <div id="caseOne">
             <div id="healthOne">100/100</div>
             <img
               id="playerOne"
@@ -631,7 +631,7 @@ class PlayerOneSelect extends React.Component {
               Evade
             </button>
           </div>
-          <div id="case2">
+          <div id="caseTwo">
             <div id="healthTwo">100/100</div>
             <img
               id="playerTwo"
