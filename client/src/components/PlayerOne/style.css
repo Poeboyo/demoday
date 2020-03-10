@@ -37,8 +37,45 @@
 .flip {
   transform: scaleX(-1);
 }
+
 #playerOne,
 #playerTwo {
   width: 310px;
   height: 442px;
+}
+#caseTwo {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 1%;
+}
+#caseOne {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+#attackTwo {
+  position: absolute;
+}
+#defendTwo {
+  position: absolute;
+}
+#strAttackTwo {
+  position: absolute;
+}
+#counterTwo {
+  position: absolute;
+}
+
+#attackOne {
+  position: absolute;
+}
+#defendOne {
+  position: absolute;
+}
+#strAttackOne {
+  position: absolute;
+}
+#counterOne {
+  position: absolute;
 }
